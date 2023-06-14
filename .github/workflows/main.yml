@@ -2,13 +2,13 @@ name: ci
 
 on:
   push:
-    branch: main
+    branches: main
     
 jobs:
   build:
-  runs-on: ubuntu-latest
+    runs-on: ubuntu-latest
   
-  steps:
-  - uses: action/checkout@v3
-  - name: run one line script
-    run: echo Hello World!
+    steps:
+     - uses: action/checkout@v3
+     - name: run one line script
+       run: echo Hello World!
